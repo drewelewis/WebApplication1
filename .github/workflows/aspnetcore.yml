@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
-    - name: Restore with dotnet
-      run: dotnet restore
+    - name: Explicit build dotnet
+      run: dotnet build .\..\WebApplication1.sln
     - name: Build with dotnet
       run: dotnet build --configuration Release
