@@ -14,6 +14,6 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Explicit build dotnet
-      run: dotnet build .\..\..\WebApplication1.sln
+      run: ls -al
     - name: Build with dotnet
       run: dotnet build --configuration Release
